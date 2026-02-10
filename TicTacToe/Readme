@@ -1,1 +1,71 @@
 
+# 🎮 Tic-Tac-Toe - Projet NSI
+
+**Auteur :** Enzo Côme  
+**Classe :** Terminale NSI  
+**Année :** 2022-2023
+
+---
+
+## 📖 Description
+
+Jeu du morpion (Tic-Tac-Toe) développé en Python avec Tkinter. Premier projet personnel en NSI pour découvrir la programmation d'interfaces graphiques.
+
+Le jeu permet à deux joueurs de s'affronter sur une grille 3x3 avec un système de score et de manches.
+
+---
+
+## 🚀 Installation
+
+### Fichiers nécessaires
+- `TikTakToe.py` (programme principal)
+- `croix.png` (image pour les croix)
+- `rond.png` (image pour les ronds)
+
+### Lancement
+```bash
+python TikTakToe.py
+```
+
+---
+
+## 🎮 Fonctionnalités
+
+- Alternance automatique des joueurs
+- Détection de victoire (lignes, colonnes, diagonales)
+- Système de score 
+- Ligne de victoire colorée
+- Relance automatique 
+
+---
+
+## 💻 Technologies
+
+- **Langage :** Python
+- **Interface :** Tkinter
+- **Structures :** Listes 2D pour la grille de jeu
+
+---
+
+## 🐛 Difficultés rencontrées
+
+- Confusion entre les indices pour placer les symboles au bon endroit
+- Dessin des lignes de victoire en diagonale
+- Gestion de la détection de victoire pour toutes les combinaisons possibles
+
+---
+
+## 🔧 Améliorations possibles
+
+- Effets sonores
+- Animations de victoire
+- Sauvegarder l'historique des parties
+
+---
+
+## 📝 Ce que j'ai appris
+
+- Création d'interfaces graphiques avec Tkinter
+- Manipulation de Canvas et gestion des événements
+- Utilisation de listes 2D
+- Organisation du code avec des fonctions
