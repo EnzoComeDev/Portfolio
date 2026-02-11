@@ -1,8 +1,8 @@
-# 🐝 Nuit de l'Info 2024 - Equipe "Tout Pour l'Argent"
+# 🐝 Nuit de l'Info 2025 - Equipe "Tout Pour l'Argent"
 
 ## 📋 Contexte
 
-Projet réalisé lors de la **Nuit de l'Info 2024**, une nuit complète de développement web dirigé par des défis. Ce challenge réunit des étudiants en informatique pour concevoir un site web sur une thématique imposée.
+Projet réalisé lors de la **Nuit de l'Info 2025**, une nuit complète de développement web dirigé par des défis. Ce challenge réunit des étudiants en informatique pour concevoir un site web sur une thématique imposée.
 
 **Équipe :** Nous étions une équipe de 5 : Guillaume Gascoin, Alexis Bernard, Simon Béasse, Majd Alhalah, Enzo Côme
 
@@ -65,4 +65,4 @@ J'ai développé une **page d'inscription volontairement anti-ergonomique** en r
 
 ---
 
-*Projet réalisé dans le cadre de la Nuit de l'Info 2024 - Université d'Angers*
+*Projet réalisé dans le cadre de la Nuit de l'Info 2025 - Université d'Angers*
