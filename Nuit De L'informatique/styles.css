@@ -1,0 +1,334 @@
+body {
+    background-color: darkslateblue;
+    background-image: radial-gradient(circle at top, #ff00ff55, transparent 60%),
+                      radial-gradient(circle at bottom, #00ffff55, transparent 60%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:gold;
+}
+
+body.groupe-page {
+    padding-top: 180px; /* Ajuste le padding-top spécifiquement pour la page groupe.html */
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espace entre les images */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    background: darkslateblue;
+    padding: 20px;
+    text-align: center;
+    color: gold;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color:gold;
+    text-decoration: none;
+    font-family: "Bitcount Prop Single", system-ui;
+}
+
+section {
+    padding: 40px;
+    margin: 40px auto;
+    background: darkslateblue;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    max-width: 900px;
+}
+
+section.groupe-page{
+    scroll-margin-top: 180px;
+}
+
+section h2 {
+    margin-top: 0;
+    font-family: "Bitcount Prop Single", system-ui;
+    margin: 0;
+}
+
+section p {
+    margin-top: 0;
+    font-family: "Bitcount Prop Single", system-ui;
+}
+
+section#game img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+}
+
+
+#Histoire
+{
+    background-color: :darkslateblue;
+    font-family: "Bitcount Prop Single", system-ui;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color:#483d8b;
+    color: gold;
+    text-align: center;
+    padding: 1rem 0;
+    /*position: fixed;*/
+    width: 100%;
+    bottom: 0;
+    font-family: "Bitcount Prop Single", system-ui;
+}
+footer p{
+    padding-left: 35%;
+    font-family: "Bitcount Prop Single", system-ui;
+    
+}
+footer img{
+    padding-left: 20%;
+}
+
+nav a:hover {
+    color: #385D8D; /* Couleur du texte au survol */
+}
+
+#ID_EC:hover[id="ID_EC"] {
+    color: rgb(241, 145, 0); /* Couleur du texte au survol */
+}
+
+#ID_NLG:hover[id="ID_NLG"] {
+    color: rgb(19, 200, 255); /* Couleur du texte au survol */
+}
+#ID_Groupe:hover[id="ID_Groupe"]{
+    color: rgb(222, 55,255)
+}
+
+
+
+ol {
+    list-style-type: decimal;
+}
+
+ol ol {
+    list-style: none; /* Supprime les styles par défaut */
+    counter-reset: item; /* Réinitialise le compteur des items */
+}
+
+ol ol li {
+    counter-increment: item; /* Incrémente le compteur pour chaque élément de la liste */
+    margin-bottom: 10px; /* Ajoute un espacement entre les éléments de la liste */
+}
+
+ol ol li::before {
+    content: counter(item, upper-alpha) " -> "; /* Utilise upper-roman et un tiret comme séparateur */
+    margin-right: 10px; /* Ajoute un espace entre le numéro et le texte */
+}
+pre{
+    font-family: Arial, sans-serif;
+}
+
+
+p {
+  font-family: "Bitcount Prop Single", system-ui;
+}
+
+a
+{
+    color:gold;
+    text-decoration: none;
+}
+.btn-8bit {
+    background: #222;
+    color: white;
+    padding: 12px 20px;
+    margin: 5px;
+    border: 3px solid #fff;
+    font-family: 'Press Start 2P', cursive;
+    box-shadow: 4px 4px 0 #000;
+    transition: 0.2s;
+}
+
+.btn-8bit:hover {
+    transform: translateY(-4px);
+    box-shadow: 6px 6px 0 #000;
+}
+
+
+
+ #gafam
+ {
+    align: :center;
+ }
+
+ .text-container
+ {
+    margin-left: 2rem;
+    margin-right: 2rem;
+ }
+
+ .image-container img {
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+
+
+.text-container:hover {
+    transform: translateY(-4px);
+    transition: 0.3s;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+}
+
+h2 {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+h2::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: black;
+    display: block;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+ #backToTop {
+      position: fixed;       /* le maintien sur l'écran */
+      bottom: 20px;          /* 20px du bas */
+      right: 20px;           /* 20px de la droite */
+      z-index: 9999;         /* au-dessus du contenu */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      font-size: 24px;
+      /* apparence : tu peux remplacer par ton pixel-art via background-image */
+      background: black;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+    }
+
+    /* petit refinage pour l'icône/lien à l'intérieur */
+    #backToTop a {
+      color: #ffdd57;
+      text-decoration: none;
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      line-height: 56px;
+      text-align: center;
+    }
+
+    /* Masquer le bouton quand on est en haut (classe .hidden via JS) */
+    #backToTop.hidden {
+      display: none;
+    }
+
+
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+
+.video-link {
+  position: absolute;
+  inset: 0;         
+  display: block;
+  z-index: 2;
+}
+
+
+.inscription
+{
+    text-align: right;
+}
+
+.inscriptiond {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 9999;
+    pointer-events: auto;
+}
+
+
+header {
+    background: darkslateblue;
+    padding: 20px;
+    text-align: center;
+    color: gold;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+
+.son img {
+  width:80px;
+  cursor:pointer;
+  position:fixed;
+}
+
+.lecteur_audio {
+    border-radius: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end; /* 👉 aligne à droite */
+}
+
+.lecteur_audio {
+    margin-left: auto;
+}
+
+
+#thierry .text-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* espace entre thierry et le lecteur */
+}
+
+#thierry p {
+    margin-right: 20px;
+}
