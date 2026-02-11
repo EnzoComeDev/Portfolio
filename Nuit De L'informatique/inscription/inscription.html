@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Inscription</title>
+  <link rel="icon" type="image/png" href="images/bee.png">
+  <link rel="stylesheet" href="inscription.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<audio id="son" src="audio.mp3"></audio>
+
+<div class="son">
+    <img src="img/MutedButton.png" id="btnMute" style="width:40px; height:40px; cursor:pointer;">
+    <img src="img/SoundButton.png" id="btnSound" style="width:40px; height:40px; cursor:pointer; display:none ">
+</div>
+
+<script>
+const son = document.getElementById("son");
+const btnMute = document.getElementById("btnMute");
+const btnSound = document.getElementById("btnSound");
+
+
+btnMute.addEventListener("click", () => {
+    son.play();
+    btnMute.style.display = "none";
+    btnSound.style.display = "inline";
+});
+
+
+btnSound.addEventListener("click", () => {
+    son.pause();
+    son.currentTime = 0; 
+    btnSound.style.display = "none";
+    btnMute.style.display = "inline";
+});
+</script> 
+</head>
+<body>
+<a href="https://fr.linkedin.com/in/man48" target="_blank" id="copy">Made by Majd Alhalah</a>
+<a href="https://www.instagram.com/b0rats/" target="_blank" id="copy2">And Enzo Côme</a>
+<div class="form">
+<form action="inscription2.html" method="post">
+    <label for="username">Identifiant : </label><br>
+    <input type="text" id="username" name="username" required size="30"><br>
+    <label for="password">Mot de passe : </label><br>
+    <input type="text" id="password" name="password" required size="30"><br>
+    <input type="submit" id="submit" value="Envoyer" class="flee" tabindex="-1">
+</form>
+</div>
+</body>
+<script src="inscription.js"></script>
+
+</html>

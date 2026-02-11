@@ -1,0 +1,106 @@
+body{
+    background-color: darkslateblue;
+    font-family: "Bitcount Prop Single", system-ui;
+    color: gold;
+    font-size: 120%;
+    background-image: radial-gradient(circle at top, #ff00ff55, transparent 60%),
+    radial-gradient(circle at bottom, #00ffff55, transparent 60%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.form{
+    background-color: #2b2b2b;
+    border: 2px gray solid;
+    width: 40%;
+    height: 75%;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    box-shadow: 5px 5px 15px gray;
+}
+
+.form label{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form input{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    top: 70%;
+	left: 41.6%;
+}
+
+.rules{
+    background-color: #2b2b2b;
+    border: 2px gray solid;
+    position: absolute;
+	top: 50%;
+	left: 140%;
+	transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 15px gray;
+    width: 65%;
+    text-align: center;
+    
+    transition: opacity 0.25s ease;
+    opacity: 1;
+}
+
+.rule{
+    background-color: darkslateblue;
+    border: 2px gray solid;
+    box-shadow: 5px 5px 15px gray;
+    width: 50%;
+    height: 10%;
+    text-align: center;
+}
+
+.flee {
+    position: absolute; 
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: left 0.3s ease, top 0.3s ease;
+}
+
+.cours{
+    background-color: #2b2b2b;
+    border: 2px gray solid;
+    width: 40%;
+    height: 30%;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    box-shadow: 5px 5px 15px gray;
+}
+
+#copy{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: gold;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    top: 93%;
+}
+
+#copy2{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: gold;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
