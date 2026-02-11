@@ -1,0 +1,84 @@
+#Ce fichier représente comment nous nous sommes organisé pour avancer sur le projet 
+#On y méttais ce qui étais fais et ce qui est a faire 
+#Nous avons eu l'idée de créer ce fichier dès le début du projet et de le compléter
+#au fur et a mesure de l'avancement 
+
+# Projet Tortue 
+
+## Ce qui est fais (26 - Janvier)
+
+### Analyse lexicale (parser/scanner.ll)
+- Tous les mots-clés
+  avance, recule, saute, tourne, si, sinon, fin si, tant, repete, fin repete, fonction, fin fonction, couleur, tortues, dessiner, mur, vide, pas, de, fois, jardin, à gauche, à droite, devant, derriere
+- Symboles spéciaux : @ (AROBASE), $ (DOLLAR), : (DEUX_POINTS), #rrggbb (COULEUR_HEX)
+- Nombres : ENTIER
+- Identifiants : IDENTIFIANT (noms de fonctions)
+- Commentaires -- jusqu'à fin de ligne
+- NL avec gestion des locations
+
+### Analyse syntaxique (parser/parser.yy)
+- Tokens et priorités opérateurs (+ - * /) 
+- Règle expression complète : ENTIER, parenthèses, + - * /, négation
+- Règle direction ( string : "gauche", "droite", etc.)
+- Règle instruction de base pour AVANCE (et squelette pour RECULE, SAUTE, TOURNE, COULEUR, TORTUES, DESSINER)
+- Gestion fois_opt et at_opt (répétitions + @n) – types <int> déclarés
+- Construction AST : création de InstructionPtr avec std::make_shared<Avance>( X )
+- Stockage : driver.ajouterInstruction($$)
+
+### Structure intermédiaire 
+- Instruction.hh créé (abstraite)
+  - virtual void executer(JardinHandler&, Contexte&) const
+  - virtual std::string toString(int indent) const
+  - using InstructionPtr = std::shared_ptr<Instruction>
+  - using Bloc = std::vector<InstructionPtr>
+- Avance.hh / Avance.cc implémentés
+  - Constructeur avec ExpressionPtr + tortueId
+  - executer() appelle jardin->avancer() / avancerToutes()
+  - Gestion round() pour expressions non entières
+  - toString() avec indentation et @n
+- Classes: Recule, Saute, Tourne, Couleur, Dessiner (à créer)
+
+### Driver & intégration
+- vector<InstructionPtr> programme ajouté dans Driver
+- void ajouterInstruction(InstructionPtr) implémenté
+
+### GUI / JardinHandler 
+- Méthodes ajouter : avancer(unsigned int id, int nbPas), avancerToutes(int nbPas)
+  → réutilise tortues[id].avancer() (déjà implémenter)
+- Squelette pour reculer / reculerToutes prévu
+
+## Ce qui reste à faire
+
+### Priorité 1 
+- Finaliser règles parser pour :
+  - recule, saute, tourne, couleur #rrggbb [@n]
+-  Créer classes : Recule, Saute, Tourne, Couleur, Dessiner
+-  Tester parsing + stockage AST avec exemples 1, 2, 6, 7
+
+### – Conditions & blocs
+-  Créer classes : Condition (mur/vide + direction + pas de)
+-  Créer classe Si (condition + Bloc alors + Bloc sinon optionnel)
+-  Créer classe Bloc (vector<InstructionPtr>)
+-  Règle bloc : ":" NL instructions "fin si" | "sinon" ":" bloc
+-  Règle si : SI condition DEUX_POINTS bloc [SINON DEUX_POINTS bloc] FIN_SI
+
+### – Boucles
+-  Classe Repete (ExpressionPtr nb + Bloc)
+-  Classe TantQue (Condition + Bloc)
+-  Règles : REPETE expression FOIS DEUX_POINTS bloc FIN_REPETE
+  TANT QUE condition DEUX_POINTS bloc FIN_TANT_QUE
+
+### – Fonctions
+- Classe Fonction (std::string nom, std::vector<std::string> params, Bloc corps)
+- Classe AppelFonction (std::string nom, std::vector<ExpressionPtr> agruments)
+- Règles fonction 
+
+### - Finalisation & tests
+-  toString() complet dans Expression (pour debug surtout)
+-  Tester exemples 3 (repete + si), 4 (tant que + fonction), 5 (expressions + $n)
+-  Gestion saute (saut par-dessus obstacle si possible)
+
+### Bonus
+-  Gestion stylo (poserStylo / leverStylo)
+-  Remettre les jardins a leurs état par défaut
+

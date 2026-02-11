@@ -1,0 +1,8 @@
+# Dossiers de build
+Projet Turtl/build/
+Projet Turtl/CMakeFiles/
+*.o
+*.exe
+*.stash
+CMakeCache.txt
+Makefile

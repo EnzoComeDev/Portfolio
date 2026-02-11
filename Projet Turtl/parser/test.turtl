@@ -1,0 +1,16 @@
+# Test complet des instructions Turtle
+
+tortues 2          -- on définit 2 tortues
+
+avance 5           -- avance de 5 cases
+recule 3           -- recule de 3 cases
+saute 2            -- saute de 2 cases
+tourne à gauche    -- tourne à gauche
+tourne à droite    -- tourne à droite
+couleur #ff0000    -- change la couleur en rouge
+dessiner           -- lance le dessin
+
+avance 1 @2        -- fait avancer la tortue 2 de 1 case
+recule 2 @1        -- recule la tortue 1 de 2 cases
+fin                -- fin du programme
+
