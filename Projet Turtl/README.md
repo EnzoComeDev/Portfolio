@@ -50,7 +50,7 @@ Construction d'un arbre syntaxique abstrait avec :
 
 ## 🛠️ Technologies
 
-**Flex & Bison** • **C/C++** • **Qt 6** • **QMake**
+**Flex & Bison** • **C/C++** • **Qt 6** 
 
 ## 🎓 Compétences acquises
 
