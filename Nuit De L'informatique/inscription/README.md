@@ -7,7 +7,7 @@ L'objectif du défi **"Ergonomie"** était de créer une page web **tout sauf er
 
 ## Description
 
-La page contient un formulaire de connexion avec un **mot de passe complexe**. L'utilisateur doit respecter une série de contraintes pour réussir à soumettre le formulaire. Les contraintes sont volontairement complexes et décalées pour rendre l'expérience frustrante et peu ergonomique :  
+La page contient un formulaire de connexion avec un **mot de passe complexe**. L'utilisateur doit respecter une série de contraintes pour réussir à soumettre le formulaire. Les contraintes sont volontairement complexes et décalées pour rendre l'expérience frustrante et peu ergonomique
 
 
 Le bouton **Submit** se déplace aléatoirement lorsque les conditions ne sont pas toutes remplies, empêchant l'utilisateur de cliquer facilement.
