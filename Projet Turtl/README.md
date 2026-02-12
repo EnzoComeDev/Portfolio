@@ -58,7 +58,7 @@ Construction d'un arbre syntaxique abstrait avec :
 - Conception de grammaires formelles
 - Structures de données avancées (AST)
 - Travail collaboratif et méthodologie (conception → implémentation)
-- Débogage de problèmes complexes (dépendances circulaires, parsing)
+- Débogage de problèmes complexes
 
 ---
 
