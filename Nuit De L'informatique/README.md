@@ -53,7 +53,6 @@ J'ai développé une **page d'inscription volontairement anti-ergonomique** en r
 - ✅ Système de contrôle audio
 - ✅ Boucle de redirection infinie
 - ✅ Messages humoristiques et ironiques
-- ✅ Design responsive en pixel art
 
 ## 🎓 Compétences acquises
 
