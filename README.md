@@ -13,7 +13,7 @@ https://leria-info.univ-angers.fr/~fabien.garreau/enseignements/compilation/Proj
 
 ### 2. **Nuit de l'informatique 2025**
 Participation à la compétition où j'ai réalisé une page pour le défi **"Ergonomie"**.  
-Objectif : Créer une interface **tout sauf ergonomique**, afin de comprendre les principes de conception d'UI/UX en contre-exemple.
+Objectif : Créer une interface **tout sauf ergonomique**.
 https://www.nuitdelinfo.com/inscription/defis/444
 
 
