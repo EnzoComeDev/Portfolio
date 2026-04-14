@@ -3,7 +3,7 @@
 ## 📋 Contexte
 
 Ce projet fait partie de mon stage chez **Ours Agile Studio**.
-**Objectif :** Développer un jeu de course arcade avec une route infinie générée procéduralement, des obstacles dynamiques et des interactions avec TikTok pour que les streamers puissent jouer en direct et que les viewers influencent le jeu (spawn de véhicules, obstacles, boosts etc)
+L'objectif est de développer un jeu de course arcade avec une route infinie générée procéduralement, des obstacles dynamiques et des interactions avec TikTok pour que les streamers puissent jouer en direct et que les viewers influencent le jeu (spawn de véhicules, obstacles, boosts etc)
 
 ## 🎮 Description du jeu
 
