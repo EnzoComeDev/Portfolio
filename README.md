@@ -6,22 +6,26 @@
 
 ## Projets
 
-### 1. **Projet Turtl**
+### 1. **ChaosDriving**
+Un jeu de course arcade de type *endless runner* développé en **Unity 6 et C#**.  
+Le joueur doit survivre le plus longtemps possible sur une route infinie générée procéduralement, éviter des bombes, collecter de l’argent et utiliser des pouvoirs pour maximiser son score.  
+Objectif : Apprendre la génération procédurale, la gestion des objets via pooling, la physique de voiture et les interactions en direct avec TikTok.  
+
+### 2. **Projet Turtl**
 Un interpréteur de langage développé en **C/C++** avec **Bison et Flex**, permettant de gérer le déplacement d'une tortue dans une interface graphique.  
-Objectif : Comprendre l'analyse syntaxique et la génération d'actions dans un environnement visuel.
-https://leria-info.univ-angers.fr/~fabien.garreau/enseignements/compilation/Projet_2025-2026/turtl.php
+Objectif : Comprendre l'analyse syntaxique et la génération d'actions dans un environnement visuel.  
+[Plus d’infos](https://leria-info.univ-angers.fr/~fabien.garreau/enseignements/compilation/Projet_2025-2026/turtl.php)
 
-### 2. **Nuit de l'informatique 2025**
+### 3. **Nuit de l'informatique 2025**
 Participation à la compétition où j'ai réalisé une page pour le défi **"Ergonomie"**.  
-Objectif : Créer une interface **tout sauf ergonomique**.
-https://www.nuitdelinfo.com/inscription/defis/444
+Objectif : Créer une interface **tout sauf ergonomique**.  
+[Plus d’infos](https://www.nuitdelinfo.com/inscription/defis/444)
 
-
-### 3. **Tic-Tac-Toe**
+### 4. **Tic-Tac-Toe**
 Mon **premier vrai projet Python** : un jeu complet de Tic-Tac-Toe jouable via interface graphique.  
 Objectif : Concevoir un jeu interactif, gérer les événements et vérifier les conditions de victoire.
 
-### 4. **Solveur de Nonogramme**
+### 5. **Solveur de Nonogramme**
 Développement d'un solveur de nonogrammes, **compétition L1 informatique**.  
 Le projet n'a pas été terminé par manque de temps, mais notre groupe a été **le plus avancé** dans la compétition.  
 Objectif : Créer un algorithme capable de résoudre des nonogrammes à la fois aléatoirement et de manière logique.
@@ -29,4 +33,4 @@ Objectif : Créer un algorithme capable de résoudre des nonogrammes à la fois 
 ---
 
 ## Contact
-Pour toute question complémentaire : **enzocome88@gmail.com**  
+Pour toute question complémentaire : **enzocome88@gmail.com**
