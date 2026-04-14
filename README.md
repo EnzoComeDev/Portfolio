@@ -9,7 +9,11 @@
 ### 1. **ChaosDriving - EN COURS**
 Un jeu de course arcade de type *endless runner* développé en **Unity 6 et C#**.  
 Le joueur doit survivre le plus longtemps possible sur une route infinie générée procéduralement, éviter des bombes, collecter de l’argent et utiliser des pouvoirs pour maximiser son score.  
-Objectif : Apprendre la génération procédurale, la gestion des objets via pooling, la physique de voiture et les interactions en direct avec TikTok
+
+Objectif :  
+- Apprendre la **génération procédurale** et la gestion des objets via **pooling**  
+- Maîtriser la **physique de voiture** et les interactions **en direct avec TikTok**, permettant aux viewers de modifier le jeu en temps réel (spawn d’obstacles, boosts, véhicules…)  
+- Développer un système d’**amélioration du véhicule**, de **skin** et de **statistiques du joueur**
 
 ### 2. **Tower Defense - EN PAUSE**
 Mon **premier projet Unity**, développé en **C#**, visant à créer un jeu de Tower Defense.  
