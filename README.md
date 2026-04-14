@@ -14,16 +14,18 @@ Objectif : Apprendre la génération procédurale, la gestion des objets via poo
 ### 2. **Projet Turtl**
 Un interpréteur de langage développé en **C/C++** avec **Bison et Flex**, permettant de gérer le déplacement d'une tortue dans une interface graphique.  
 Objectif : Comprendre l'analyse syntaxique et la génération d'actions dans un environnement visuel.  
-[Plus d’infos](https://leria-info.univ-angers.fr/~fabien.garreau/enseignements/compilation/Projet_2025-2026/turtl.php)
+Réalisé en **3ème année de Licence Informatique** au sein de l'université d'Angers (2026)
+https://leria-info.univ-angers.fr/~fabien.garreau/enseignements/compilation/Projet_2025-2026/turtl.php
 
 ### 3. **Nuit de l'informatique 2025**
 Participation à la compétition où j'ai réalisé une page pour le défi **"Ergonomie"**.  
 Objectif : Créer une interface **tout sauf ergonomique**.  
-[Plus d’infos](https://www.nuitdelinfo.com/inscription/defis/444)
+https://www.nuitdelinfo.com/inscription/defis/444
 
 ### 4. **Tic-Tac-Toe**
 Mon **premier vrai projet Python** : un jeu complet de Tic-Tac-Toe jouable via interface graphique.  
 Objectif : Concevoir un jeu interactif, gérer les événements et vérifier les conditions de victoire.
+Réalisé en **Terminale** en spécialité **NSI**.
 
 ### 5. **Solveur de Nonogramme**
 Développement d'un solveur de nonogrammes, **compétition L1 informatique**.  
