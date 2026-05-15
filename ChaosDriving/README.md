@@ -1,49 +1,221 @@
-# 🚗 ChaosDriving - EN COURS
+# 🚗 ChaosDriving
 
-## 📋 Contexte
+> Endless Runner arcade post-apocalyptique développé sous Unity 6
 
-Ce projet fait partie de mon stage chez **Ours Agile Studio**.
-L'objectif est de développer un jeu de course arcade avec une route infinie générée procéduralement, des obstacles dynamiques et des interactions avec TikTok pour que les streamers puissent jouer en direct et que les viewers influencent le jeu (spawn de véhicules, obstacles, boosts etc)
+## 📖 Présentation
 
-## 🎮 Description du jeu
+**ChaosDriving** est un jeu de course arcade de type *Endless Runner* développé durant mon stage chez **:contentReference[oaicite:0]{index=0}**.
 
-**ChaosDriving** est un jeu de course arcade de type *endless runner*.  
-Le joueur doit survivre le plus longtemps possible sur une route infinie générée de manière procédurale, éviter des bombes, collecter de l’argent et utiliser des pouvoirs pour maximiser son score.
+Le joueur pilote une voiture dans un univers post-apocalyptique aux tons rouge sang, sur une route infinie générée procéduralement.  
+L’objectif est de survivre le plus longtemps possible tout en évitant les obstacles, en collectant de l’argent et en améliorant son véhicule via une boutique intégrée.
 
-## 💻 Systèmes implémentés
+Le projet est également pensé pour une future interaction avec **TikTok Live**, permettant aux viewers d’influencer directement la partie en temps réel (spawn d’obstacles, boosts, véhicules ennemis, etc.).
 
-### Génération de route infinie
-- Système de **pooling d’objets** pour des performances optimales
-- File de segments actifs numérotés (`RoadGenerator.cs`, `RoadStraight.cs`)
+---
+
+# 🎮 Gameplay
+
+- 🚘 Route infinie générée procéduralement
+- 💣 Obstacles dynamiques :
+  - Bombes
+  - Voitures ennemies
+  - Flaques d’huile
+  - Wagons couchés
+- 💰 Collecte d’argent
+- 🧲 Système d’aimant pour attirer les pièces
+- ⚡ Nitro / Boost de vitesse
+- ❤️ Gestion des vies
+- 🛒 Boutique avec upgrades et déblocage de véhicules
+- 📈 Système de progression sauvegardé
+
+---
+
+# 🕹️ Contrôles
+
+| Action | Touches |
+|---|---|
+| Avancer | `Z` / `W` / `↑` |
+| Reculer / ralentir | `S` / `↓` |
+| Ralentir (70%) | `Q` / `A` / `←` |
+| Nitro / Boost | `Espace` / `D` / `→` |
+
+---
+
+# 🧠 Fonctionnalités principales
+
+## 🌍 Génération procédurale de route
+
+Le jeu utilise un système de génération infinie basé sur le **pooling d’objets** afin d’optimiser les performances.
+
+### Fonctionnement
+- Segments de route recyclés dynamiquement
+- File de segments actifs numérotés
+- Raycast sous le véhicule pour détecter le segment actuel
 - Recyclage automatique des segments derrière le joueur
-- Détection de la position de la voiture via **raycast**
+- Respawn dynamique des pickups à chaque réutilisation
 
-### Contrôleur de voiture (`CarController.cs`)
-- Déplacement avec **Rigidbody** et `MovePosition` pour une physique stable
-- Support clavier ZQSD / WASD / flèches directionnelles
-- Système de **boost**
+### Scripts principaux
+- `RoadGenerator.cs`
+- `RoadStraight.cs`
 
-### Caméra dynamique (`CameraFollow.cs`)
-- Suivi fluide du véhicule
-- **FOV dynamique** pour accentuer la sensation de vitesse
+---
 
-### Obstacles et collectibles
-- **Bombes** (`Bomb.cs`)
-- **Argent** (`Money.cs`)
-- Suppression automatique après collecte
+## 🚗 Contrôleur de voiture
 
-### UI & Menus
-- **HUD** (`LiveUI.cs`) : Affichage des vies
-- **Menu principal** (`MainMenu.cs`) : Navigation entre les scènes
-- **Effets de boutons** (`ButtonHover.cs`) : Effet visuel au survol
+### Fonctionnalités
+- Déplacement basé sur `Rigidbody`
+- Utilisation de `MovePosition` pour une physique stable
+- Gestion du Nitro
+- Gestion du ralentissement
+- Système de glissade sur huile
+- Détection des collisions et perte de vies
 
-## 🛠️ Technologies
+### Script principal
+- `CarController.cs`
 
-**Unity 6** • **C#** • **Physique Rigidbody** • **Input System** • **TextMeshPro** • **Object Pooling**
+---
 
-## 🎓 Compétences acquises
+## 🎥 Caméra dynamique
 
-- Architecture de jeu avec un **GameManager centralisé**
-- Génération procédurale avec **recyclage mémoire** (pooling)
-- Détection de collisions par **raycast**
-- Gestion des états du jeu (*Playing*, *Paused*, *GameOver*)
+Le système de caméra renforce la sensation de vitesse grâce à :
+- Un suivi fluide du véhicule
+- Un angle positionné sur le côté droit de la voiture
+- Un FOV dynamique évoluant selon la vitesse (`60° → 80°`)
+
+### Script principal
+- `CameraFollow.cs`
+
+---
+
+# ⚠️ Obstacles & Pickups
+
+## Obstacles
+| Objet | Effet |
+|---|---|
+| 💣 Bombe | Retire une vie |
+| 🚗 Voiture ennemie | Retire une vie |
+| 🛢️ Flaque d’huile | Glissade incontrôlable pendant 2 secondes |
+| 🚃 Wagon couché | Retire une vie |
+
+## Pickups
+| Objet | Effet |
+|---|---|
+| 💰 Argent | +50$ |
+| 🧲 Aimant | Attire l’argent autour du joueur |
+
+---
+
+# 🛒 Boutique & Progression
+
+## 🚘 Véhicules disponibles
+- Betall
+- Toyoyo
+- Landy Lorean
+- Tristar
+
+Chaque véhicule possède ses propres statistiques de base.
+
+---
+
+## 📈 Système d’amélioration
+
+Chaque voiture dispose de 4 upgrades indépendants :
+
+| Upgrade | Effet |
+|---|---|
+| ❤️ Santé | +1 vie |
+| ⚡ Vitesse | Augmente la vitesse de base |
+| 🧲 Aimant | Augmente le rayon d’attraction |
+| 🔥 Nitro | Augmente la puissance du boost |
+
+- 5 niveaux maximum par upgrade
+- Prix évolutifs
+- Sauvegarde via `PlayerPrefs`
+
+---
+
+# 💾 Sauvegarde des données
+
+Le système de persistance sauvegarde :
+- Argent total
+- Meilleure distance
+- Véhicule sélectionné
+- Upgrades débloqués
+- Distance totale parcourue
+- Nombre de parties jouées
+- Distance moyenne
+
+---
+
+# 🖥️ Interface utilisateur
+
+## HUD en jeu
+- ❤️ Nombre de vies
+- 💰 Argent collecté
+- 📏 Distance parcourue
+
+## Menus
+- Menu principal
+- Écran Game Over
+- Boutique
+- Effets de hover interactifs
+
+### Scripts UI
+- `LiveUI.cs`
+- `MainMenu.cs`
+- `ButtonHover.cs`
+
+---
+
+# 🛠️ Technologies utilisées
+
+- **Unity 6**
+- **C#**
+- **Rigidbody Physics**
+- **Input System**
+- **TextMeshPro**
+- **Object Pooling**
+- **PlayerPrefs**
+
+---
+
+# 🎓 Compétences acquises
+
+Ce projet m’a permis de travailler sur :
+
+- L’architecture d’un jeu Unity
+- La génération procédurale
+- L’optimisation avec le pooling
+- La gestion d’états de jeu (`Menu`, `Playing`, `Dead`, `GameOver`)
+- Les systèmes de sauvegarde
+- Le développement d’une boutique et d’un système de progression
+- La gestion de physique avec `Rigidbody`
+- Les interactions UI / UX
+- Les mécaniques arcade orientées gameplay dynamique
+
+---
+
+# 📌 Statut du projet
+
+🚧 Projet actuellement en développement.
+
+Fonctionnalités prévues :
+- Intégration TikTok Live
+- Nouveaux obstacles
+- Nouveaux véhicules
+- Effets visuels et sonores avancés
+- Système de score en ligne
+
+---
+
+# 📷 Aperçu
+
+*(Ajoute ici des captures d’écran ou un GIF du gameplay)*
+
+---
+
+# 👨‍💻 Auteur
+
+Développé par [Ton Nom]
+
+Dans le cadre d’un stage chez **:contentReference[oaicite:1]{index=1}**
