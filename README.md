@@ -6,7 +6,7 @@
 
 ## Projets
 
-### 1. **ChaosDriving - EN COURS**
+### 1. **ChaosDriving - TERMINER**
 Un jeu de course arcade de type *endless runner* développé en **Unity 6 et C#**.  
 Le joueur doit survivre le plus longtemps possible sur une route infinie générée procéduralement, éviter des bombes, collecter de l’argent et utiliser des pouvoirs pour maximiser son score.  
 
