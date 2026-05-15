@@ -4,8 +4,8 @@ public class MainMenu : MonoBehaviour
 {
     public void Play()
     {
-       Debug.Log("Game Cliqued");
        UnityEngine.SceneManagement.SceneManager.LoadScene("Game");
+       GameManager.Instance.StartGame();
     }
 
     public void Shop()
@@ -16,5 +16,10 @@ public class MainMenu : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
+    }
+
+    public void Menu()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Menu");
     }
 }

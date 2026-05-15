@@ -6,7 +6,7 @@ public class RoadGenerator : MonoBehaviour
     public int segmentsBehind = 3;
     public int segmentsAhead = 5;
     public GameObject roadPrefab;
-    public float segmentSpacing = -12f;
+    public float segmentSpacing = -480f;
     public Vector3 startPos = Vector3.zero;
 
     private Queue<GameObject> pool = new Queue<GameObject>();
@@ -29,7 +29,6 @@ public class RoadGenerator : MonoBehaviour
         for (int i = 0; i < TotalSegments; i++)
             SpawnNext();
 
-        Debug.Log($"[RoadGenerator] Initialisé : {activeSegments.Count} segments actifs.");
     }
 
     void Update()
@@ -44,7 +43,6 @@ public class RoadGenerator : MonoBehaviour
         while (activeSegments.Count > 0 && activeSegments.Peek().roadNumber < carRoad - segmentsBehind)
         {
             var seg = activeSegments.Dequeue();
-            Debug.Log($"[RoadGenerator] Despawn segment {seg.roadNumber}");
             Recycle(seg.obj);
         }
 
@@ -67,14 +65,19 @@ public class RoadGenerator : MonoBehaviour
         seg.SetActive(true);
 
         seg.GetComponent<RoadStraight>().RoadNumber = _nextRoadNumber;
-        activeSegments.Enqueue((seg, _nextRoadNumber));
 
-        //Debug.Log($"[RoadGenerator] Spawn segment {_nextRoadNumber}");
+        var spawner = seg.GetComponent<PickupSpawner>();
+        if (spawner != null) spawner.SpawnPickups();
+
+        activeSegments.Enqueue((seg, _nextRoadNumber));
         _nextRoadNumber++;
     }
 
     void Recycle(GameObject seg)
     {
+        var spawner = seg.GetComponent<PickupSpawner>();
+        if (spawner != null) spawner.ClearPickups();
+
         seg.SetActive(false);
         pool.Enqueue(seg);
     }
