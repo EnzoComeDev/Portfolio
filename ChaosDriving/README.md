@@ -8,8 +8,7 @@ Le projet possède également un **GDD (Game Design Document)** contenant :
 - les mécaniques détaillées,
 - les systèmes de gameplay,
 - les boucles de jeu,
-- des visuels et références,
-- l’architecture globale du projet.
+- des visuels
 
 📄 Consulter le GDD : [ChaosDriving_GDD.pdf](./Gdd_ChaosDriving.pdf)
 
@@ -17,10 +16,10 @@ Le projet possède également un **GDD (Game Design Document)** contenant :
 
 ## 📖 Présentation
 
-**ChaosDriving** est un jeu de course arcade de type *Endless Runner*
+**ChaosDriving** est un jeu arcade de type *Endless Runner*
 
-Le joueur pilote une voiture dans un univers post-apocalyptique aux tons rouge sang, sur une route infinie générée procéduralement.  
-L’objectif est de survivre le plus longtemps possible tout en évitant les obstacles, en collectant de l’argent et en améliorant son véhicule via une boutique intégrée.
+Le joueur pilote une voiture dans un univers post-apocalyptique, sur une route infinie générée procéduralement.  
+L’objectif est de survivre le plus longtemps possible tout en évitant des obstacles, en collectant de l’argent et en améliorant son véhicule via une boutique.
 
 Le projet est également pensé pour une future interaction avec **TikTok Live**, permettant aux viewers d’influencer directement la partie en temps réel (spawn d’obstacles, boosts, véhicules ennemis, etc.).
 
@@ -28,14 +27,14 @@ Le projet est également pensé pour une future interaction avec **TikTok Live**
 
 # 🎮 Gameplay
 
-- 🚘 Route infinie générée procéduralement
-- 💣 Obstacles dynamiques :
+- 🚘 Route infinie
+- 💣 Obstacles :
   - Bombes
   - Voitures ennemies
   - Flaques d’huile
   - Wagons couchés
 - 💰 Collecte d’argent
-- 🧲 Système d’aimant pour attirer les pièces
+- 🧲 Système d’aimant pour attirer l'argent
 - ⚡ Nitro / Boost de vitesse
 - ❤️ Gestion des vies
 - 🛒 Boutique avec upgrades et déblocage de véhicules
