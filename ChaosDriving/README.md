@@ -2,6 +2,19 @@
 
 > Endless Runner arcade post-apocalyptique développé sous Unity 6
 
+## 📘 Game Design Document
+
+Le projet possède également un **GDD (Game Design Document)** contenant :
+- les mécaniques détaillées,
+- les systèmes de gameplay,
+- les boucles de jeu,
+- des visuels et références,
+- l’architecture globale du projet.
+
+📄 Consulter le GDD : [ChaosDriving_GDD.pdf](./Gdd_ChaosDriving.pdf)
+
+---
+
 ## 📖 Présentation
 
 **ChaosDriving** est un jeu de course arcade de type *Endless Runner*
