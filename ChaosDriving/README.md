@@ -48,14 +48,14 @@ Le projet est également pensé pour une future interaction avec **TikTok Live**
 |---|---|
 | Avancer | `Z` / `W` / `↑` |
 | Reculer / ralentir | `S` / `↓` |
-| Ralentir (70%) | `Q` / `A` / `←` |
+| Ralentir | `Q` / `A` / `←` |
 | Nitro / Boost | `Espace` / `D` / `→` |
 
 ---
 
 # 🧠 Fonctionnalités principales
 
-## 🌍 Génération procédurale de route
+## 🌍 Génération de route
 
 Le jeu utilise un système de génération infinie basé sur le **pooling d’objets** afin d’optimiser les performances.
 
@@ -72,7 +72,7 @@ Le jeu utilise un système de génération infinie basé sur le **pooling d’ob
 
 ---
 
-## 🚗 Contrôleur de voiture
+## 🚗 Vehicule
 
 ### Fonctionnalités
 - Déplacement basé sur `Rigidbody`
@@ -87,7 +87,7 @@ Le jeu utilise un système de génération infinie basé sur le **pooling d’ob
 
 ---
 
-## 🎥 Caméra dynamique
+## 🎥 Caméra 
 
 Le système de caméra renforce la sensation de vitesse grâce à :
 - Un suivi fluide du véhicule
@@ -119,7 +119,7 @@ Le système de caméra renforce la sensation de vitesse grâce à :
 
 # 🛒 Boutique & Progression
 
-## 🚘 Véhicules disponibles
+## 🚘 Véhicules disponibles (visuels dans le Gdd)
 - Betall
 - Toyoyo
 - Landy Lorean
@@ -148,14 +148,14 @@ Chaque voiture dispose de 4 upgrades indépendants :
 
 # 💾 Sauvegarde des données
 
-Le système de persistance sauvegarde :
-- Argent total
-- Meilleure distance
-- Véhicule sélectionné
-- Upgrades débloqués
-- Distance totale parcourue
-- Nombre de parties jouées
-- Distance moyenne
+Le système sauvegarde :
+- L'argent total
+- La meilleure distance
+- Le véhicule sélectionné
+- Les upgrades débloqués
+- La distance totale parcourue
+- Le nombre de parties jouées
+- La distance moyenne
 
 ---
 
@@ -164,13 +164,13 @@ Le système de persistance sauvegarde :
 ## HUD en jeu
 - ❤️ Nombre de vies
 - 💰 Argent collecté
-- 📏 Distance parcourue
+- Distance parcourue
 
 ## Menus
 - Menu principal
-- Écran Game Over
+- Écran de Game Over
 - Boutique
-- Effets de hover interactifs
+- Effets de hover
 
 ### Scripts UI
 - `LiveUI.cs`
@@ -183,10 +183,6 @@ Le système de persistance sauvegarde :
 
 - **Unity 6**
 - **C#**
-- **Rigidbody Physics**
-- **Input System**
-- **TextMeshPro**
-- **Object Pooling**
 - **PlayerPrefs**
 
 ---
@@ -203,7 +199,7 @@ Ce projet m’a permis de travailler sur :
 - Le développement d’une boutique et d’un système de progression
 - La gestion de physique avec `Rigidbody`
 - Les interactions UI / UX
-- Les mécaniques arcade orientées gameplay dynamique
+- Les mécaniques arcade orientées gameplay
 
 ---
 
